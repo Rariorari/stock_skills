@@ -1,0 +1,57 @@
+{
+  "category": "health",
+  "date": "2026-04-03",
+  "timestamp": "2026-04-03T07:38:46",
+  "summary": {
+    "total": 6,
+    "healthy": 1,
+    "early_warning": 3,
+    "caution": 1,
+    "exit": 1
+  },
+  "positions": [
+    {
+      "symbol": "PLTR",
+      "pnl_pct": -0.1663,
+      "trend": "下降",
+      "quality_label": "良好",
+      "alert_level": "caution"
+    },
+    {
+      "symbol": "1328.T",
+      "pnl_pct": -0.0166,
+      "trend": "横ばい",
+      "quality_label": "対象外",
+      "alert_level": "early_warning"
+    },
+    {
+      "symbol": "4568.T",
+      "pnl_pct": -0.1488,
+      "trend": "下降",
+      "quality_label": "複数悪化",
+      "alert_level": "exit"
+    },
+    {
+      "symbol": "7751.T",
+      "pnl_pct": 0.0555,
+      "trend": "横ばい",
+      "quality_label": "良好",
+      "alert_level": "early_warning"
+    },
+    {
+      "symbol": "9104.T",
+      "pnl_pct": 0.4812,
+      "trend": "上昇",
+      "quality_label": "良好",
+      "alert_level": "none"
+    },
+    {
+      "symbol": "8058.T",
+      "pnl_pct": -0.0174,
+      "trend": "上昇",
+      "quality_label": "1指標↓",
+      "alert_level": "early_warning"
+    }
+  ],
+  "_saved_at": "2026-04-03T07:38:46"
+}
