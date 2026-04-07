@@ -1,0 +1,115 @@
+{
+  "category": "research",
+  "date": "2026-04-07",
+  "timestamp": "2026-04-07T03:50:01",
+  "research_type": "stock",
+  "target": "5801.T",
+  "symbol": "5801.T",
+  "name": "FURUKAWA ELECTRIC CO",
+  "fundamentals": {
+    "price": 36380.0,
+    "market_cap": 2559267307520,
+    "sector": "Industrials",
+    "industry": "Electrical Equipment & Parts",
+    "per": 72.86639,
+    "pbr": 6.7761707,
+    "roe": 0.14886,
+    "dividend_yield": 0.0049,
+    "revenue_growth": 0.085,
+    "eps_growth": null,
+    "beta": 0.923,
+    "debt_to_equity": 80.545
+  },
+  "value_score": 14.26,
+  "grok_research": {
+    "recent_news": [],
+    "catalysts": {
+      "positive": [],
+      "negative": []
+    },
+    "analyst_views": [],
+    "x_sentiment": {
+      "score": 0.0,
+      "summary": "",
+      "key_opinions": []
+    },
+    "competitive_notes": [],
+    "raw_response": ""
+  },
+  "x_sentiment": {
+    "positive": [],
+    "negative": [],
+    "sentiment_score": 0.0,
+    "raw_response": ""
+  },
+  "news": [
+    {
+      "title": "Middle East War Prospects Bouy Asian Stock Markets",
+      "publisher": "MT Newswires",
+      "link": "https://finance.yahoo.com/markets/world-indices/articles/middle-east-war-prospects-bouy-103702825.html",
+      "publish_time": "2026-04-01T10:37:02Z"
+    },
+    {
+      "title": "Tempered Risk-On Mood Lifts Asian Stock Markets",
+      "publisher": "MT Newswires",
+      "link": "https://finance.yahoo.com/news/tempered-risk-mood-lifts-asian-103959472.html",
+      "publish_time": "2026-03-17T10:39:59Z"
+    },
+    {
+      "title": "Middle East, Oil Views Depress Asian Stock Markets",
+      "publisher": "MT Newswires",
+      "link": "https://finance.yahoo.com/news/middle-east-oil-views-depress-103233344.html",
+      "publish_time": "2026-03-13T10:32:33Z"
+    },
+    {
+      "title": "Tech, AI Outlooks Roil But Broadly Lift Asian Stock Markets",
+      "publisher": "MT Newswires",
+      "link": "https://finance.yahoo.com/news/tech-ai-outlooks-roil-broadly-104137243.html",
+      "publish_time": "2026-02-24T10:41:37Z"
+    },
+    {
+      "title": "A Look At Furukawa Electric (TSE:5801) Valuation After A Sharp Share Price Surge",
+      "publisher": "Simply Wall St.",
+      "link": "https://finance.yahoo.com/news/look-furukawa-electric-tse-5801-102624626.html",
+      "publish_time": "2026-02-11T10:26:24Z"
+    },
+    {
+      "title": "Wall Street Cues, Renewed Tech Strength Lift Asia Stock Markets",
+      "publisher": "MT Newswires",
+      "link": "https://finance.yahoo.com/news/wall-street-cues-renewed-tech-103822740.html",
+      "publish_time": "2026-02-10T10:38:22Z"
+    },
+    {
+      "title": "Nikkei Hits Another Record High Amid Optimism Over Japan PM Takaichi's Policies",
+      "publisher": "Barrons.com",
+      "link": "https://www.barrons.com/livecoverage/stock-market-news-today-021026/card/nikkei-hits-another-record-high-amid-optimism-over-japan-pm-takaichi-s-policies-haTTzy5Zb0ASVxTuT2SO?siteid=yhoof2&yptr=yahoo",
+      "publish_time": "2026-02-10T08:51:26Z"
+    },
+    {
+      "title": "Wall Street Cues, Election Results Send Asian Stock Markets Surging",
+      "publisher": "MT Newswires",
+      "link": "https://finance.yahoo.com/news/wall-street-cues-election-results-104803426.html",
+      "publish_time": "2026-02-09T10:48:03Z"
+    },
+    {
+      "title": "Interest Rates, Geopolitics, Wall Street Cues Roil Asian Stock Markets",
+      "publisher": "MT Newswires",
+      "link": "https://finance.yahoo.com/news/interest-rates-geopolitics-wall-street-104428979.html",
+      "publish_time": "2026-01-21T10:44:28Z"
+    },
+    {
+      "title": "Japan Politics, China-US Trade Tensions Undercut Asian Stock Markets",
+      "publisher": "MT Newswires",
+      "link": "https://finance.yahoo.com/news/japan-politics-china-us-trade-104735100.html",
+      "publish_time": "2025-10-14T10:47:35Z"
+    }
+  ],
+  "api_status": {
+    "grok": {
+      "status": "not_configured",
+      "status_code": null,
+      "message": ""
+    }
+  },
+  "_saved_at": "2026-04-07T03:50:01"
+}
