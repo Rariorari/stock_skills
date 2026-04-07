@@ -4,14 +4,45 @@ from src.output._format_helpers import fmt_pct_sign as _fmt_pct_sign
 from src.output._format_helpers import fmt_float as _fmt_float
 
 
-def _render_stock_table(lines: list[str], positions: list[dict]) -> None:
+def _load_prev_health_prices(base_dir: str = "data/history") -> dict:
+    """Load previous health check's current_price by symbol.
+
+    The formatter runs before save_health, so the most recent file on
+    disk is the previous run's result. Use it as the baseline for change.
+
+    Returns a dict of {symbol: current_price}.
+    """
+    from src.data.history.load import load_history
+    try:
+        records = load_history("health", base_dir=base_dir)
+        if records:
+            return {
+                p["symbol"]: p["current_price"]
+                for p in records[0].get("positions", [])
+                if p.get("current_price") is not None
+            }
+    except Exception:
+        pass
+    return {}
+
+
+def _fmt_change(current: float | None, prev: float | None) -> str:
+    """Format price change from previous health check."""
+    if current is None or prev is None or prev == 0:
+        return "-"
+    chg = (current - prev) / prev * 100
+    sign = "+" if chg >= 0 else ""
+    return f"{sign}{chg:.1f}%"
+
+
+def _render_stock_table(lines: list[str], positions: list[dict], prev_prices: dict) -> None:
     """Render the stock health check table (individual stocks)."""
     lines.append(
-        "| 銘柄 | 損益 | トレンド "
+        "| 銘柄 | 損益 | 前回比 | トレンド "
         "| 変化の質 | アラート "
         "| 長期適性 | 還元安定度 | 逆張り |"
     )
-    lines.append("|:-----|-----:|:-------|:--------|:------------|:--------|:--------|:-------|")
+    lines.append("|:-----|-----:|------:|:-------|:--------|:------------|:--------|:--------|:-------|")
 
     for pos in positions:
         symbol = pos.get("symbol", "-")
@@ -19,6 +50,10 @@ def _render_stock_table(lines: list[str], positions: list[dict]) -> None:
             symbol += " [小型]"
         pnl_pct = pos.get("pnl_pct", 0)
         pnl_str = _fmt_pct_sign(pnl_pct) if pnl_pct is not None else "-"
+
+        current_price = pos.get("trend_health", {}).get("current_price")
+        prev_price = prev_prices.get(pos.get("symbol"))
+        change_str = _fmt_change(current_price, prev_price)
 
         trend = pos.get("trend_health", {}).get("trend", "不明")
         quality = pos.get("change_quality", {}).get("quality_label", "-")
@@ -54,25 +89,28 @@ def _render_stock_table(lines: list[str], positions: list[dict]) -> None:
             ct_str = "-"
 
         lines.append(
-            f"| {symbol} | {pnl_str} | {trend} | {quality} "
+            f"| {symbol} | {pnl_str} | {change_str} | {trend} | {quality} "
             f"| {alert_str} | {lt_label} | {rs_label} | {ct_str} |"
         )
 
     lines.append("")
 
 
-def _render_etf_table(lines: list[str], positions: list[dict]) -> None:
+def _render_etf_table(lines: list[str], positions: list[dict], prev_prices: dict) -> None:
     """Render the ETF health check table (KIK-469 Phase 2)."""
     lines.append(
-        "| 銘柄 | 損益 | トレンド "
+        "| 銘柄 | 損益 | 前回比 | トレンド "
         "| 経費率 | AUM | ETFスコア | アラート |"
     )
-    lines.append("|:-----|-----:|:-------|:--------|:------|----------:|:--------|")
+    lines.append("|:-----|-----:|------:|:-------|:--------|:------|----------:|:--------|")
 
     for pos in positions:
         symbol = pos.get("symbol", "-")
         pnl_pct = pos.get("pnl_pct", 0)
         pnl_str = _fmt_pct_sign(pnl_pct) if pnl_pct is not None else "-"
+        current_price = pos.get("trend_health", {}).get("current_price")
+        prev_price = prev_prices.get(pos.get("symbol"))
+        change_str = _fmt_change(current_price, prev_price)
         trend = pos.get("trend_health", {}).get("trend", "不明")
 
         change_q = pos.get("change_quality", {})
@@ -93,7 +131,7 @@ def _render_etf_table(lines: list[str], positions: list[dict]) -> None:
         alert_str = f"{alert_emoji} {alert_label}" if alert_emoji else "なし"
 
         lines.append(
-            f"| {symbol} | {pnl_str} | {trend} | {expense} "
+            f"| {symbol} | {pnl_str} | {change_str} | {trend} | {expense} "
             f"| {aum} | {score_str} | {alert_str} |"
         )
 
@@ -149,6 +187,10 @@ def format_health_check(health_data: dict) -> str:
     lines.append("─── 詳細 ────────────────────────────────")
     lines.append("")
 
+    # Load previous health check prices for change column
+    _base_dir = health_data.get("_base_dir", "data/history")
+    prev_prices = _load_prev_health_prices(base_dir=_base_dir)
+
     # KIK-469 Phase 2: Split tables by stock/ETF
     stock_positions = health_data.get("stock_positions")
     etf_positions = health_data.get("etf_positions")
@@ -157,7 +199,7 @@ def format_health_check(health_data: dict) -> str:
         # Backward compat: old format without partition keys
         lines.append("## 保有銘柄ヘルスチェック")
         lines.append("")
-        _render_stock_table(lines, positions)
+        _render_stock_table(lines, positions, prev_prices)
     else:
         has_both = bool(stock_positions) and bool(etf_positions)
         if stock_positions:
@@ -167,7 +209,7 @@ def format_health_check(health_data: dict) -> str:
             else:
                 lines.append("## 保有銘柄ヘルスチェック")
                 lines.append("")
-            _render_stock_table(lines, stock_positions)
+            _render_stock_table(lines, stock_positions, prev_prices)
         if etf_positions:
             if has_both:
                 lines.append("## ETFヘルスチェック")
@@ -175,7 +217,7 @@ def format_health_check(health_data: dict) -> str:
             else:
                 lines.append("## 保有銘柄ヘルスチェック")
                 lines.append("")
-            _render_etf_table(lines, etf_positions)
+            _render_etf_table(lines, etf_positions, prev_prices)
 
     # Summary counts
     total = summary.get("total", 0)
