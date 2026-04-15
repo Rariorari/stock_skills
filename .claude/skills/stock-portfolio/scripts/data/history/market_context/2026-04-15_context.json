@@ -1,7 +1,7 @@
 {
   "category": "market_context",
   "date": "2026-04-15",
-  "timestamp": "2026-04-15T00:45:42",
+  "timestamp": "2026-04-15T00:47:42",
   "indices": [
     {
       "name": "S&P500",
@@ -14,9 +14,9 @@
     {
       "name": "日経平均",
       "symbol": "^N225",
-      "price": 58487.33984375,
-      "daily_change": 0.010538644057089434,
-      "weekly_change": 0.04637274671222057,
+      "price": 58487.578125,
+      "daily_change": 0.010542761057656096,
+      "weekly_change": 0.04637700970326647,
       "is_point_diff": false
     },
     {
@@ -38,35 +38,35 @@
     {
       "name": "USD/JPY",
       "symbol": "JPY=X",
-      "price": 158.84500122070312,
-      "daily_change": -0.0023176560191346786,
-      "weekly_change": 0.001279629176853332,
+      "price": 158.84300231933594,
+      "daily_change": -0.0023302108278228746,
+      "weekly_change": 0.0012670291000217184,
       "is_point_diff": false
     },
     {
       "name": "EUR/USD",
       "symbol": "EURUSD=X",
-      "price": 1.1793843507766724,
-      "daily_change": 0.002122880525422553,
-      "weekly_change": 0.011534387531209805,
+      "price": 1.1795234680175781,
+      "daily_change": 0.0022410884447453946,
+      "weekly_change": 0.011653705608460848,
       "is_point_diff": false
     },
     {
       "name": "原油(WTI)",
       "symbol": "CL=F",
-      "price": 90.31999969482422,
-      "daily_change": -0.08841342323718869,
-      "weekly_change": -0.07714317809214004,
+      "price": 90.37000274658203,
+      "daily_change": -0.08790874973260929,
+      "weekly_change": -0.07663226514277303,
       "is_point_diff": false
     },
     {
       "name": "金",
       "symbol": "GC=F",
-      "price": 4854.60009765625,
-      "daily_change": 0.02365894855409586,
-      "weekly_change": 0.013021138475138536,
+      "price": 4854.10009765625,
+      "daily_change": 0.023553516703071885,
+      "weekly_change": 0.012916802266378084,
       "is_point_diff": false
     }
   ],
-  "_saved_at": "2026-04-15T00:45:42"
+  "_saved_at": "2026-04-15T00:47:42"
 }
