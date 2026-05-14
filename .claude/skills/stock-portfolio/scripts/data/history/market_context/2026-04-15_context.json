@@ -1,0 +1,72 @@
+{
+  "category": "market_context",
+  "date": "2026-04-15",
+  "timestamp": "2026-04-15T00:47:42",
+  "indices": [
+    {
+      "name": "S&P500",
+      "symbol": "^GSPC",
+      "price": 6967.3798828125,
+      "daily_change": 0.01178286636479279,
+      "weekly_change": 0.0272114098175139,
+      "is_point_diff": false
+    },
+    {
+      "name": "日経平均",
+      "symbol": "^N225",
+      "price": 58487.578125,
+      "daily_change": 0.010542761057656096,
+      "weekly_change": 0.04637700970326647,
+      "is_point_diff": false
+    },
+    {
+      "name": "VIX",
+      "symbol": "^VIX",
+      "price": 18.360000610351562,
+      "daily_change": -0.7600002288818359,
+      "weekly_change": -2.6800003051757812,
+      "is_point_diff": true
+    },
+    {
+      "name": "米10年債",
+      "symbol": "^TNX",
+      "price": 4.25600004196167,
+      "daily_change": -0.0409998893737793,
+      "weekly_change": -0.034999847412109375,
+      "is_point_diff": true
+    },
+    {
+      "name": "USD/JPY",
+      "symbol": "JPY=X",
+      "price": 158.84300231933594,
+      "daily_change": -0.0023302108278228746,
+      "weekly_change": 0.0012670291000217184,
+      "is_point_diff": false
+    },
+    {
+      "name": "EUR/USD",
+      "symbol": "EURUSD=X",
+      "price": 1.1795234680175781,
+      "daily_change": 0.0022410884447453946,
+      "weekly_change": 0.011653705608460848,
+      "is_point_diff": false
+    },
+    {
+      "name": "原油(WTI)",
+      "symbol": "CL=F",
+      "price": 90.37000274658203,
+      "daily_change": -0.08790874973260929,
+      "weekly_change": -0.07663226514277303,
+      "is_point_diff": false
+    },
+    {
+      "name": "金",
+      "symbol": "GC=F",
+      "price": 4854.10009765625,
+      "daily_change": 0.023553516703071885,
+      "weekly_change": 0.012916802266378084,
+      "is_point_diff": false
+    }
+  ],
+  "_saved_at": "2026-04-15T00:47:42"
+}

@@ -1,0 +1,63 @@
+{
+  "category": "health",
+  "date": "2026-04-07",
+  "timestamp": "2026-04-07T03:23:46",
+  "summary": {
+    "total": 6,
+    "healthy": 1,
+    "early_warning": 3,
+    "caution": 1,
+    "exit": 1
+  },
+  "positions": [
+    {
+      "symbol": "PLTR",
+      "current_price": 147.93,
+      "pnl_pct": -0.1693,
+      "trend": "下降",
+      "quality_label": "良好",
+      "alert_level": "caution"
+    },
+    {
+      "symbol": "1328.T",
+      "current_price": 17550.0,
+      "pnl_pct": -0.0124,
+      "trend": "横ばい",
+      "quality_label": "対象外",
+      "alert_level": "early_warning"
+    },
+    {
+      "symbol": "4568.T",
+      "current_price": 2875.5,
+      "pnl_pct": -0.1452,
+      "trend": "下降",
+      "quality_label": "複数悪化",
+      "alert_level": "exit"
+    },
+    {
+      "symbol": "7751.T",
+      "current_price": 4467.0,
+      "pnl_pct": 0.0506,
+      "trend": "横ばい",
+      "quality_label": "良好",
+      "alert_level": "early_warning"
+    },
+    {
+      "symbol": "9104.T",
+      "current_price": 6845.0,
+      "pnl_pct": 0.4985,
+      "trend": "上昇",
+      "quality_label": "良好",
+      "alert_level": "none"
+    },
+    {
+      "symbol": "8058.T",
+      "current_price": 5393.0,
+      "pnl_pct": -0.0321,
+      "trend": "上昇",
+      "quality_label": "1指標↓",
+      "alert_level": "early_warning"
+    }
+  ],
+  "_saved_at": "2026-04-07T03:23:46"
+}

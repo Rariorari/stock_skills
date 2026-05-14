@@ -109,6 +109,8 @@ for _mod_path, _flag_suffix, _names in _IMPORT_REGISTRY:
         globals()[f"HAS_{_flag_suffix}"] = True
     except ImportError:
         globals()[f"HAS_{_flag_suffix}"] = False
+        for _orig, _alias in _names:
+            globals().setdefault(_alias or _orig, None)
 
 
 # ---------------------------------------------------------------------------

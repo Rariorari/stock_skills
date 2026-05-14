@@ -1,0 +1,103 @@
+{
+  "category": "research",
+  "date": "2026-04-07",
+  "timestamp": "2026-04-07T03:49:53",
+  "research_type": "stock",
+  "target": "5803.T",
+  "symbol": "5803.T",
+  "name": "FUJIKURA",
+  "fundamentals": {
+    "price": 4388.0,
+    "market_cap": 7264690241536,
+    "sector": "Industrials",
+    "industry": "Conglomerates",
+    "per": 56.162807,
+    "pbr": 14.3284445,
+    "roe": 0.31145,
+    "dividend_yield": 0.009300000000000001,
+    "revenue_growth": null,
+    "eps_growth": null,
+    "beta": null,
+    "debt_to_equity": 23.258
+  },
+  "value_score": 16.3,
+  "grok_research": {
+    "recent_news": [],
+    "catalysts": {
+      "positive": [],
+      "negative": []
+    },
+    "analyst_views": [],
+    "x_sentiment": {
+      "score": 0.0,
+      "summary": "",
+      "key_opinions": []
+    },
+    "competitive_notes": [],
+    "raw_response": ""
+  },
+  "x_sentiment": {
+    "positive": [],
+    "negative": [],
+    "sentiment_score": 0.0,
+    "raw_response": ""
+  },
+  "news": [
+    {
+      "title": "Middle East Woes Undercut Asian Stock Markets",
+      "publisher": "MT Newswires",
+      "link": "https://finance.yahoo.com/markets/world-indices/articles/middle-east-woes-undercut-asian-103632407.html",
+      "publish_time": "2026-03-31T10:43:17Z"
+    },
+    {
+      "title": "Does Fujikura’s 3,981% Five Year Surge Still Leave Room for Upside in 2025?",
+      "publisher": "Simply Wall St.",
+      "link": "https://finance.yahoo.com/news/does-fujikura-3-981-five-031929496.html",
+      "publish_time": "2025-12-18T03:19:29Z"
+    },
+    {
+      "title": "Asian Markets Retreat at Tuesday's Close as Investors Await US Jobs, Inflation Reports",
+      "publisher": "MT Newswires",
+      "link": "https://finance.yahoo.com/news/asian-markets-retreat-tuesday-apos-105408082.html",
+      "publish_time": "2025-12-16T10:54:08Z"
+    },
+    {
+      "title": "Central Bank Outlooks, Property Shaes Roil Asian Stock Markets",
+      "publisher": "MT Newswires",
+      "link": "https://finance.yahoo.com/news/central-bank-outlooks-property-shaes-104604398.html",
+      "publish_time": "2025-12-08T10:46:04Z"
+    },
+    {
+      "title": "Japan's century-old Fujikura rides AI data centre boom to become Nikkei standout",
+      "publisher": "Reuters",
+      "link": "https://finance.yahoo.com/news/japans-century-old-fujikura-rides-010755172.html",
+      "publish_time": "2025-10-24T01:07:55Z"
+    },
+    {
+      "title": "Tech Pushes Asian Stock Markets Higher in Holiday-Thinned Trading",
+      "publisher": "MT Newswires",
+      "link": "https://finance.yahoo.com/news/tech-pushes-asian-stock-markets-104601933.html",
+      "publish_time": "2025-10-07T10:46:01Z"
+    },
+    {
+      "title": "Assessing Fujikura After Shares Surge Over 100% on Rising Connectivity Demand in 2025",
+      "publisher": "Simply Wall St.",
+      "link": "https://finance.yahoo.com/news/assessing-fujikura-shares-surge-over-122045521.html",
+      "publish_time": "2025-09-17T12:20:45Z"
+    },
+    {
+      "title": "Nvidia Outlook, Earnings Season Roil Asian Stock Markets",
+      "publisher": "MT Newswires",
+      "link": "https://finance.yahoo.com/news/nvidia-outlook-earnings-season-roil-103446923.html",
+      "publish_time": "2025-08-28T10:34:46Z"
+    }
+  ],
+  "api_status": {
+    "grok": {
+      "status": "not_configured",
+      "status_code": null,
+      "message": ""
+    }
+  },
+  "_saved_at": "2026-04-07T03:49:53"
+}

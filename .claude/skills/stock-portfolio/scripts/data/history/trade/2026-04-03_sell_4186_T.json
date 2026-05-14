@@ -1,0 +1,17 @@
+{
+  "category": "trade",
+  "date": "2026-04-03",
+  "timestamp": "2026-04-03T07:25:23",
+  "symbol": "4186.T",
+  "trade_type": "sell",
+  "shares": 100,
+  "price": 7464.0,
+  "currency": "JPY",
+  "memo": "",
+  "_saved_at": "2026-04-03T07:25:23",
+  "sell_price": 7690.0,
+  "realized_pnl": 22600.0,
+  "pnl_rate": 0.030278670953912113,
+  "hold_days": 4,
+  "cost_price": 7464.0
+}

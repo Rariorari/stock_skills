@@ -1,0 +1,109 @@
+{
+  "category": "research",
+  "date": "2026-04-07",
+  "timestamp": "2026-04-07T03:49:59",
+  "research_type": "stock",
+  "target": "5802.T",
+  "symbol": "5802.T",
+  "name": "SUMITOMO ELECTRIC INDUSTRIES",
+  "fundamentals": {
+    "price": 9190.0,
+    "market_cap": 7167450021888,
+    "sector": "Consumer Cyclical",
+    "industry": "Auto Parts",
+    "per": 33.205666,
+    "pbr": 2.8815725,
+    "roe": 0.110249996,
+    "dividend_yield": 0.013000000000000001,
+    "revenue_growth": null,
+    "eps_growth": null,
+    "beta": 0.773,
+    "debt_to_equity": 30.16
+  },
+  "value_score": 9.48,
+  "grok_research": {
+    "recent_news": [],
+    "catalysts": {
+      "positive": [],
+      "negative": []
+    },
+    "analyst_views": [],
+    "x_sentiment": {
+      "score": 0.0,
+      "summary": "",
+      "key_opinions": []
+    },
+    "competitive_notes": [],
+    "raw_response": ""
+  },
+  "x_sentiment": {
+    "positive": [],
+    "negative": [],
+    "sentiment_score": 0.0,
+    "raw_response": ""
+  },
+  "news": [
+    {
+      "title": "Sumitomo Electric Industries (TSE:5802) Is Up 11.4% After Lifting FY2026 Earnings Guidance - What's Changed",
+      "publisher": "Simply Wall St.",
+      "link": "https://finance.yahoo.com/news/sumitomo-electric-industries-tse-5802-061157112.html",
+      "publish_time": "2026-02-12T06:11:57Z"
+    },
+    {
+      "title": "Japan's Nikkei Hits Record High Amid Positive Sentiment",
+      "publisher": "Barrons.com",
+      "link": "https://www.barrons.com/livecoverage/stock-market-news-today-020326/card/japan-s-nikkei-hits-record-high-amid-positive-sentiment-RWxbK63VelwXPOftpYVS?siteid=yhoof2&yptr=yahoo",
+      "publish_time": "2026-02-03T08:54:15Z"
+    },
+    {
+      "title": "Most Asian Markets Gain at Friday's Close Amid Thin Holiday Trading",
+      "publisher": "MT Newswires",
+      "link": "https://finance.yahoo.com/news/most-asian-markets-gain-friday-104759552.html",
+      "publish_time": "2025-12-26T10:47:59Z"
+    },
+    {
+      "title": "National Grid signs contracts for Sea Link",
+      "publisher": "Energy Global",
+      "link": "https://www.energyglobal.com/other-renewables/11122025/national-grid-signs-contracts-for-sea-link/?yptr=yahoo",
+      "publish_time": "2025-12-11T15:00:00Z"
+    },
+    {
+      "title": "Does Sumitomo Electric (TSE:5802) Relying on Renewed Supply Deals Signal Resilient Operations or Hidden Risks?",
+      "publisher": "Simply Wall St.",
+      "link": "https://finance.yahoo.com/news/does-sumitomo-electric-tse-5802-130646059.html",
+      "publish_time": "2025-12-02T13:06:46Z"
+    },
+    {
+      "title": "Central Bank Outlooks Roil Asian Stock Markets",
+      "publisher": "MT Newswires",
+      "link": "https://finance.yahoo.com/news/central-bank-outlooks-roil-asian-104539560.html",
+      "publish_time": "2025-12-01T10:45:39Z"
+    },
+    {
+      "title": "BWX Technologies, Inc. (BWXT)’s Kinectrics Division Secures a Multi-Year Contract From Sumitomo Electric Industries",
+      "publisher": "Insider Monkey",
+      "link": "https://finance.yahoo.com/news/bwx-technologies-inc-bwxt-kinectrics-144342085.html",
+      "publish_time": "2025-09-27T14:43:42Z"
+    },
+    {
+      "title": "Assessing Sumitomo Electric After 46% Rally and Major Renewable Energy Supply Contracts in 2025",
+      "publisher": "Simply Wall St.",
+      "link": "https://finance.yahoo.com/news/assessing-sumitomo-electric-46-rally-123802487.html",
+      "publish_time": "2025-09-09T12:38:02Z"
+    },
+    {
+      "title": "National Grid picks Sumitomo Electric for 2GW Sea Link HVDC project",
+      "publisher": "Power Technology",
+      "link": "https://www.power-technology.com/news/national-grid-sumitomo-2gw-sea-link/",
+      "publish_time": "2025-07-17T11:10:08Z"
+    }
+  ],
+  "api_status": {
+    "grok": {
+      "status": "not_configured",
+      "status_code": null,
+      "message": ""
+    }
+  },
+  "_saved_at": "2026-04-07T03:49:59"
+}

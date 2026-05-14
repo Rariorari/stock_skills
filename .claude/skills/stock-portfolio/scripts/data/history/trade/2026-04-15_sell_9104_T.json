@@ -1,0 +1,17 @@
+{
+  "category": "trade",
+  "date": "2026-04-15",
+  "timestamp": "2026-04-15T00:47:33",
+  "symbol": "9104.T",
+  "trade_type": "sell",
+  "shares": 100,
+  "price": 4568.0,
+  "currency": "JPY",
+  "memo": "",
+  "_saved_at": "2026-04-15T00:47:33",
+  "sell_price": 6620.0,
+  "realized_pnl": 205200.0,
+  "pnl_rate": 0.44921190893169877,
+  "hold_days": 23,
+  "cost_price": 4568.0
+}
